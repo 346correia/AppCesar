@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_menu" tools:context="com.example.victorcorreia.appcesar.Menu"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <ImageView
+        android:layout_width="174dp"
+        android:layout_height="174dp"
+        android:id="@+id/imageView2"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/cesarlogomenor" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/txtNomeMenu"
+        android:layout_gravity="center"
+        android:text="//Aqui entra o nome do aluno"
+        android:background="@drawable/screen_border_top_white"
+        android:gravity="center"
+        android:textColor="#9ab032"
+        android:shape="rectangle"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:stretchColumns="1"
+            android:baselineAligned="true"
+            android:layout_margin="0dp"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#f5f5f5"
+                android:clickable="true"
+                android:id="@+id/trNotas">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/imageView3"
+                    android:layout_column="0"
+                    android:src="@drawable/ic_notas"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="19dp"
+                    android:paddingLeft="2dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Notas"
+                    android:id="@+id/txtNotas"
+                    android:layout_column="1"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="30dp"
+                    android:gravity="center_vertical" />
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#FF777777"
+                />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#f5f5f5"
+                android:clickable="true"
+                android:id="@+id/trHorario">
+
+                <ImageView
+                    android:layout_width="47dp"
+                    android:layout_height="47dp"
+                    android:id="@+id/imageView4"
+                    android:layout_column="0"
+                    android:src="@drawable/ic_horario"
+                    android:layout_gravity="center"
+                    android:paddingLeft="6dp"
+                    android:layout_marginLeft="20dp"
+                    android:paddingTop="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Horário"
+                    android:id="@+id/txtHorario"
+                    android:layout_column="1"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="30dp"
+                    android:gravity="center_vertical" />
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#FF777777"
+                />
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#f5f5f5"
+                android:clickable="true"
+                android:id="@+id/trCalendario">
+
+                <ImageView
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:id="@+id/imageView5"
+                    android:layout_column="0"
+                    android:src="@drawable/ic_calendario"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Calendário"
+                    android:id="@+id/txtCalendario"
+                    android:layout_column="1"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="30dp"
+                    android:gravity="center_vertical" />
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#FF777777"
+                />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#f5f5f5"
+                android:clickable="true"
+                android:id="@+id/trBoleto">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/imageView6"
+                    android:layout_column="0"
+                    android:src="@drawable/ic_boleto"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="2dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="2ª Vida de Boleto"
+                    android:id="@+id/txtBoleto"
+                    android:layout_column="1"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="30dp"
+                    android:gravity="center_vertical" />
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#FF777777"
+                />
+
+        </TableLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
+
